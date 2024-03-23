@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pizza Maker!</h1>
+        <p id="student-info"></p>
+        <button id="display-student-info">Display Student Info</button>
+
+    </header>
+    <main>
+        <form id="pizza-form">
+            <!-- Pizza Size -->
+            <label for="size">Choose pizza size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <!-- Crust Type -->
+            <label for="crust">Choose crust type:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+                <option value="stuffed">Stuffed</option>
+            </select>
+
+            <!-- Sauce Selection -->
+            <fieldset>
+                <legend>Sauce:</legend>
+                <label><input type="radio" name="sauce" value="tomato"> Tomato</label>
+                <label><input type="radio" name="sauce" value="pesto"> Pesto</label>
+                <label><input type="radio" name="sauce" value="alfredo"> Alfredo</label>
+            </fieldset>
+
+            <!-- Cheese Selection -->
+            <fieldset>
+                <legend>Cheese:</legend>
+                <label><input type="checkbox" name="cheese" value="mozzarella"> Mozzarella</label>
+                <label><input type="checkbox" name="cheese" value="cheddar"> Cheddar</label>
+                <label><input type="checkbox" name="cheese" value="parmesan"> Parmesan</label>
+            </fieldset>
+
+            <!-- Ingredients -->
+            <fieldset>
+                <legend>Ingredients:</legend>
+                <!-- Meat Toppings -->
+                <fieldset>
+                    <legend>Meats:</legend>
+                    <label><input type="checkbox" name="meat" value="pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="meat" value="sausage"> Sausage</label>
+                    <label><input type="checkbox" name="meat" value="bacon"> Bacon</label>
+                </fieldset>
+                <!-- Vegetable Toppings -->
+                <fieldset>
+                    <legend>Vegetables:</legend>
+                    <label><input type="checkbox" name="veggie" value="mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="veggie" value="onions"> Onions</label>
+                    <label><input type="checkbox" name="veggie" value="peppers"> Peppers</label>
+                </fieldset>
+            </fieldset>
+
+            <label for="drink">Choose a drink:</label>
+            <select id="drink" name="drink">
+                <option value="soda">Soda</option>
+                <option value="water">Water</option>
+                <option value="beer">Beer</option>
+            </select>
+
+            <label for="comments">Special instructions:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <!-- Order Button -->
+            <button type="button" id="order-button">Order</button>
+        </form>
+        <div id="pizza-output"></div>
+    </main>
+</body>
+</html>
